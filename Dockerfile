@@ -2,8 +2,7 @@
 FROM caddy:2.9.1-builder-alpine AS builder
 
 RUN xcaddy build \
-    --with github.com/caddy-dns/ionos \
-    --with github.com/hslatman/caddy-crowdsec-bouncer/http@main
+    --with github.com/caddy-dns/godaddy
 
 FROM caddy:2.9.1-alpine
 
